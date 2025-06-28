@@ -17,33 +17,61 @@ El proyecto está concebido para ser un excelente punto de partida para aprender
 ## Estructura del Proyecto  
 
 saika_solutions/
+
 ├── core/
+
 │   ├── main_app.py           # Punto de entrada principal de la aplicación GUI
+
 │   ├── gui_manager.py        # Manejo de la interfaz de usuario del core
+
 │   ├── plugin_manager.py     # Lógica para cargar/descargar plugins
+
 │   ├── db_manager.py         # Gestión de la conexión a la base de datos
+
 │   ├── models.py             # Modelos de datos compartidos (ej. Persona)
+
 │   ├── config.py             # Gestión de configuraciones globales
+
 │   └── utils.py              # Funciones de utilidad comunes
+
 │
+
 ├── plugins/
+
 │   ├── hotel_package/        # Ejemplo de un paquete funcional
+
 │   │   ├── init.py       # Punto de entrada del plugin (define load/unload/info)
+
 │   │   ├── hotel_module.py   # Lógica de negocio específica del hotel
+
 │   │   ├── hotel_gui.py      # Componentes de GUI específicos del hotel
+
 │   │   └── models.py         # Modelos de datos específicos del hotel
+
 │   │
+
 │   ├── hospital_package/     # Otro ejemplo de paquete funcional
+
 │   │   └── ...
+
 │   │
+
 │   └── (otros_paquetes_funcionales)/
+
 │
+
 ├── static/                   # Archivos estáticos compartidos (imágenes, iconos)
+
 │
+
 ├── database/                 # Archivos de la base de datos (ej. saika_db.sqlite3)
+
 │
+
 ├── requirements.txt          # Dependencias de Python del proyecto principal
+
 ├── README.md                 # Documentación del proyecto
+
 └── run.py                    # Script para iniciar la aplicación
 
 ## Requisitos
